@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables and forms</title>
+</head>
+<body>
+
+    <h1>Day2 : HTML learning journey</h1>
+    <hr>
+
+    <h2>Weekly learning schedule</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+               <th>Topic</th>
+               <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Day1</td>
+                <td>html basics & tags</td>
+                <td>completed</td>
+            </tr>
+            <tr>
+               <td>Day2</td> 
+               <td>tables and forms</td>
+               <td> in progress</td>
+            </tr>
+            <tr>
+                <td>Day3</td>
+                <td>semantic html</td>
+                <td>upcoming</td>
+            </tr>
+                                </tbody>
+                    
+    </table>
+    <br><hr>
+    <h2>Student Registration form</h2>
+    <form action="/submit-data" method="POST">
+        <label for="name">Full Name</label>
+        <br>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email"> Email</label> 
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <p>Preferred Leraning mode:</p>
+        <input type="radio" id="online" name="mode">
+        <label> for="online"</label>
+        <br>
+        <input type="radio" id="offline" name="mode">
+        <label> for="offline"</label>
+        <br><br>
+
+        <label> for="course"</label>
+        <select id="course" name="course">
+            <option value="html"> HTML5</option>
+        <option value="css"> CSS3</option>
+        <option value="js"> JavaScript </option>
+        </select>
+        <br><br>
+
+        <label
+            for="comments">Suggestions:
+        </label><br>
+        <textarea id="comments" name="comments" rows="4" cols="30"></textarea>
+        <br><br>
+        <button type=" submit">Submit details</button>
+        <button type="reset">Clear form</button>
+    </form>
+    
+</body>
+</html>
